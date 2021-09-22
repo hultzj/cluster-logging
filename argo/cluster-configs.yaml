@@ -16,5 +16,5 @@ spec:
     repoURL: https://github.com/hultzj/cluster-logging
     targetRevision: main
   syncPolicy:
-    automated:
-      prune: true    
+    automated: {}
+  
