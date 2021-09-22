@@ -4,6 +4,7 @@ metadata:
   name: cluster-namespace-configs
   namespace: openshift-gitops
 spec:
+
   destination:
     namespace: default
     server: https://kubernetes.default.svc
@@ -14,3 +15,6 @@ spec:
     path: cluster
     repoURL: https://github.com/hultzj/cluster-logging
     targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true    
